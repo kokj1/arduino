@@ -1,16 +1,17 @@
-int red = 2;
-int yellow = 5;
-int green = 8;
+// program to make traffic lights
+// tested on the nano and should work on the uno (?)
+
+int red = 2; // in my case this is 2 but this should be changed if your connector is on D<number>
+int yellow = 5; // ^^
+int green = 8; // ^^
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(red, OUTPUT);
   pinMode(yellow, OUTPUT);
   pinMode(green, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   digitalWrite(red, HIGH);
   digitalWrite(yellow, LOW);
   digitalWrite(green, LOW);
